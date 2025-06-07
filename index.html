@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="shortcut icon" href="./Logo/AA initials.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="nav-bar">
@@ -15,60 +16,79 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <h2>Hi I'm Abisola</h2>
-        <p>I build simple and clean designs</p>
+    <section class="hero" data-aos="fade-down" data-aos-easing="ease-in-out">
+        <h2>Hi! I'm Abisola</h2>
+        <p>Welcome to my portfolio</p>
         <a href="#projects" class="view-work">View My Work</a>
     </section>
-    <section id="about" class="fade-in">
+    <section id="about"  data-aos="fade-up" data-aos-delay="200">
         <h2>About Me</h2>
         <p>Hi! I'm Abisola Atere🖐️ — a curious learner and an aspiring cybersecurity analyst with a growing passion for UI/UX design. I love turning simple ideas into digital experiences. I care about creativity, security, and accessibility, and I’m excited to keep growing one project at a time. I’m currently learning HTML, CSS, and JavaScript, because learning never ends — and I’m also exploring tools like Figma to bring thoughtful designs to life. Outside of tech, I enjoy writing poetry, building playlists that tell stories, and diving deep into the way people think and feel — skills that fuel my empathy-driven approach to design.
     </p>
     </section>
-    <section id="projects" class="fade-in">
+    <section id="projects"  data-aos="zoom-in" data-aos-delay="200">
         <h2>Projects</h2>
         <div class="project-grid">
             <div class="project-card">
                 <h3>Project One</h3>
-                <p>A Fan</p>
+                <p>A Fan✇</p>
                 <a href="https://fan-orpin.vercel.app/" target="_blank">Live Demo</a>
             </div>
             <div class="project-card">
                 <h3>Project Two</h3>
-                <p>A Calculator</p>
+                <p>A Calculator🧮</p>
                 <a href="https://calculator-beta-pearl.vercel.app/" target="_blank">Live Demo</a>
             </div>
             <div class="project-card">
                 <h3>Project Three</h3>
-                <p>A Clock</p>
+                <p>A Clock🕒</p>
                 <a href="https://analog-clock-blond-sigma.vercel.app/" target="_blank">Live Demo</a>
             </div>
             <div class="project-card">
                 <h3>Project Four</h3>
-                <p>GoodReads Project</p>
+                <p>GoodReads Project📖</p>
                 <a href="https://goodreads-project.vercel.app" target="_blank">Live Demo</a>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="resume" data-aos="fade-up" data-aos-delay="200">
+        <h2>Resume</h2>
+        <p>Download a copy of my current resume here:</p>
+        <div class="resume-wrapper">
+            <a href="./Logo/Abisola Atere's Resume.pdf" download class="resume-btn">📄Download Resume</a>
+        </div>
+    </section>
+
+
+    <section id="contact" data-aos="fade-up" data-aos-delay="200">
     <h2>Let's Connect</h2>
     <p>Have a project in mind, a question, or just want to say hi? I'd love to hear from you!</p>
-    <p>Email me at: 
+    <p>📧: 
         <a href="mailto:atereabisola187@gmail.com">atereabisola187@gmail.com</a>
     </p>
 
     <div class="social-links">
-        <a href="https://github.com/Abby-cy" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/abisola-atere-43a36130b/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Abby-cy" target="_blank">🐙GitHub</a> |
+        <a href="https://www.linkedin.com/in/abisola-atere-43a36130b/" target="_blank">💼LinkedIn</a>
     </div>
     </section>
-
-
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Abisola Atere. All rights reserved.</p>
+    </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+            once: false,
+            duration: 2000
+            });
+        });
+    </script>
 </html>
